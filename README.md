@@ -1,58 +1,30 @@
-# subcollider.js <sup>v0.1.1</sup>
+# subcollider.js <sup>v0.2.0</sup>
+[![Build Status](http://img.shields.io/travis/mohayonao/subcollider.svg?style=flat-square)](https://travis-ci.org/mohayonao/subcollider)
+[![NPM Version](http://img.shields.io/npm/v/subcollider.svg?style=flat-square)](https://www.npmjs.org/package/subcollider)
+[![Bower](http://img.shields.io/bower/v/subcollider.svg?style=flat-square)](http://bower.io/search/?q=subcollider)
+[![License](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](http://mohayonao.mit-license.org/)
 
-SubCollider.js is a JavaScript library that provides like SuperCollider functions to built-in prototypes and **sc** namespace. It is the recommended base library for [timbre.js](http://mohayonao.github.io/timbre.js/).
-
-## Download
-
-* [subcollider.js](https://raw.github.com/mohayonao/subcollider.js/master/builds/subcollider.js)
-* [subcollider-min.js](https://raw.github.com/mohayonao/subcollider.js/master/builds/subcollider-min.js)
-* [soucemap](https://raw.github.com/mohayonao/subcollider.js/master/builds/subcollider-min.map)
-
-## Documents
-
-[documents](http://mohayonao.github.com/subcollider.js/docs/)
+> JavaScript utility library that provides like SuperCollider functions
 
 ## Installation
 
-In browsers:
+bower:
 
-```html
-<script src="subcollider.js"></script>
+```
+bower install subcollider
 ```
 
-Using [npm](http://npmjs.org/):
+npm:
 
-```bash
+```
 npm install subcollider
 ```
 
-## Examples
+downloads:
 
-```js
- sc.midicps(69);
- // => 440
+- [subcollider.js](https://raw.githubusercontent.com/mohayonao/subcollider/master/build/subcollider.js)
+- [subcollider.min.js](https://raw.githubusercontent.com/mohayonao/subcollider/master/build/subcollider.min.js)
 
- sc.midicps([69, 71]);
- // => [ 440, 493.8833012561241 ]
+## License
 
- (4).ampdb();
- // => 12.041199826559248
-
- [4, 16].ampdb();
- // => [ 12.041199826559248, 24.082399653118497 ]
-
- sc.Range("0..5");
- // [ 0, 1, 2, 3, 4, 5 ]
-
- sc.Range("1...50").select("isPrime");
- // => [ 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47 ]
-
- sc.Scale.major().degreeToFreq(sc.Range(7), 440).asInteger();
- // => [ 440, 493, 554, 587, 659, 739, 830, 880 ]
-
- sc.Scale.major("just").degreeToFreq(sc.Range(7), 440).asInteger();
- // => [ 440, 495, 550, 586, 660, 733, 824, 880 ]
-
- sc.Scale.minor("just").degreeToFreq(sc.Range(7), 440).asInteger();
- // => [ 440, 495, 528, 586, 660, 704, 792, 880 ]
-```
+[MIT](http://mohayonao.mit-license.org/)

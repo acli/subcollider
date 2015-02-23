@@ -1,0 +1,29 @@
+{
+  "name": "subcollider",
+  "description": "JavaScript utility library that provides like SuperCollider functions",
+  "version": "0.2.0",
+  "authors": [
+    "nao yonamine <mohayonao@gmail.com>"
+  ],
+  "homepage": "https://github.com/mohayonao/subcollider",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "src",
+    "test"
+  ],
+  "keywords": [
+    "util",
+    "functional",
+    "music",
+    "supercollider"
+  ],
+  "license": "MIT",
+  "main": "build/subcollider.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mohayonao/subcollider.git"
+  }
+}
